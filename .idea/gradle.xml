@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../my_flutter" />
+            <option value="$PROJECT_DIR$/../my_flutter/.android/Flutter" />
+            <option value="$USER_HOME$/development/flutter/.pub-cache/git/flutter_boost-761f5b9ec828fe87a4b04bea895f12ab808f1d53/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

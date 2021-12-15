@@ -1,10 +1,11 @@
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
-    }
-}
-rootProject.name = "My Application"
+rootProject.name = "FlutterMix"
 include ':app'
+
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir,
+        '../my_flutter/.android/include_flutter.groovy'
+))
+
+include ':my_flutter'
+project(':my_flutter').projectDir = new File('../my_flutter')
